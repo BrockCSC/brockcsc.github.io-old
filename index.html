@@ -2,35 +2,112 @@
   <head>
     <title>Brock University Computer Science Club</title>
     
+    <!-- Insert All Favicon Links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#cc0000">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    
     <!-- Insert Meta Data -->
     
     <!-- Insert CSS Files -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Oxygen' rel='stylesheet' type='text/css' />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     
     <!-- Insert Javascript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     
   </head>
   
   <body>
     <div id="title-page" class="clearfix">
-      <!-- Brock Red Background Wite Text -->
-      <h1>Brock University</h1>
-      <!-- CSC White Silhouette Logo-->
-      <h1>Computer Science Club</h1>
-    </div>
-    
-    <div id="nav-bar" class="clearfix">
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
+      <div class="title-wrapper">
+        <h1>Brock University</h1>
+        <img src="img/logo.png" width="270" height="220" alt="CSC Logo alone in white." />
+        <h1>Computer Science Club</h1>
+      </div>
+      <div class="space"></div>
+      <a href="#about">
+        <img id="arrow" src="img/arrow.png" alt="A bouncy arrow" />
+      </a>
     </div>
     
     <div id="about" class="clearfix">
-      <p>Basic blurb about club and how we are totaly awesome</p>
-      <!-- Images of all executives, position, and major -->
+      <h2>About Us</h2>
+      <h3>We are the Brock University Computer Science Club, a local chapter of the ACM.</h3>
+      <p>We are an organization of students dedicated to providing Brock students with an informational and social network of individuals interested in computer science. In short, we exist to promote knowledge of and interest in computer science as well as allowing those interested in computer science to talk to each other. We have an office where members get together, a library of computer science books available to our members, and regularly schedule events for fun and learning.</p>
+      <div class="gallery">
+        <h2>Executives</h2>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Annuschka Bork</h3>
+          <h4>President</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Aj Robidas</h3>
+          <h4>Vice-President</h4>
+        </span>
+        <br />
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Thomas Nelson</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Preston Engstrom</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Math Tyler</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Chris Thompson</h3>
+          <h4>TBD</h4>
+        </span>
+        <br />
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Karim Hamasni</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Robin Hel</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>James Earle</h3>
+          <h4>TBD</h4>
+        </span>
+        <span>
+          <img src="img/test.jpg" width="250" height="280" />
+          <h3>Natassia Bork</h3>
+          <h4>TBD</h4>
+        </span>
+      </div>
+      <hr />
+      <a class="top" href="#title-page"><h3><i class="fa fa-arrow-up"></i> Top</h3></a>
     </div>
     
     <div id="services" class=clearfix>
