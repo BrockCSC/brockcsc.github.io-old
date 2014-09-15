@@ -64,6 +64,10 @@ hr {
   margin: 0 auto;
 }
 
+#about p {
+	font-size: 14pt;
+}
+
 #about h2 {
   color: #C00;
 }
@@ -107,17 +111,38 @@ hr {
   background-color: #F0F0F0;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-right: 5%;
-  padding-left: 5%;
   display: block;
+	width: 100%;
+}
+
+#services .blurb {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#services p {
+	font-size: 14pt;
+}
+
+#services h2 {
+  color: #C00;
+}
+
+#services h3 {
+  color: #C00;
 }
 
 #services .gallery {
   display: block;
+	margin: 0 auto;
   text-align: center;
 }
 
 #services .servicons {
+	border: 0;
+	padding: 0;
+	background: none;
   display: inline-block;
   margin: 0 auto;
 }
@@ -125,4 +150,11 @@ hr {
 #services .servicons h1 {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#services #popover {
+	background-color: f4cccc;
+	height: 25%;
+	width: 100%;
+	display:none
 }

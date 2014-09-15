@@ -16,4 +16,12 @@ $(window).load(function() {
     }, 600);
     return false;
   });
+	
+	$(".servicons").click(function() {
+		$("#popover").show();
+	});
+	
+	$("#popover").click(function() {
+		$("#popover").hide();
+	});
 });
