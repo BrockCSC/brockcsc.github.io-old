@@ -11,7 +11,7 @@ div {
 }
 
 .space {
-  padding-top: 10%;
+  padding-top: 8%;
 }
 
 .top {
@@ -21,6 +21,23 @@ div {
 
 hr {
   margin-bottom: 5px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 999999;
+  color: #FFF;
+  background: #000;
+	border: 0;
+	padding: 10px 15px 10px 8px;
+  margin: 0 auto;
+  text-decoration: none;
+  outline: none;
+}
+
+nav {
+  top: 100px;
+  display: none;
 }
 
 #title-page {
@@ -57,11 +74,11 @@ hr {
 }
 
 #about {
-  padding-top: 40px;
-  padding-bottom: 40px;
   width: 90%;
   display: block;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 #about p {
@@ -94,23 +111,23 @@ hr {
   margin-right: 15px;
 }
 
-#about a {
+.top {
+  color: #C00;
   text-decoration: none;
-  
   -o-transition: 0.6s;
   -ms-transition: 0.6s;
   -moz-transition: 0.6s;
   -webkit-transition: 0.6s;
 }
 
-#about a:hover {
-  color: #404040;
+.top:hover {
+  color: #000;
 }
 
 #services {
   background-color: #F0F0F0;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   display: block;
 	width: 100%;
 }
@@ -140,11 +157,22 @@ hr {
 }
 
 #services .servicons {
+  color: #000;
 	border: 0;
 	padding: 0;
 	background: none;
   display: inline-block;
   margin: 0 auto;
+  text-decoration: none;
+  outline: none;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -webkit-transition: 0.6s;
+}
+
+#services .servicons:hover {
+  color: #C00;
 }
 
 #services .servicons h1 {
@@ -152,9 +180,23 @@ hr {
   margin-right: 20px;
 }
 
-#services #popover {
-	background-color: f4cccc;
-	height: 25%;
+#services .popover {
+	background-color: #f4cccc;
 	width: 100%;
-	display:none
+	display: none;
+}
+
+#services .popover #pop {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0px 30px 0px;
+}
+
+#services .line {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
 }

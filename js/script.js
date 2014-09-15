@@ -10,6 +10,14 @@ $.fn.exBounce = function(){
 $(window).load(function() {
   $("#arrow").exBounce();
   
+  $("#but").click(function() {
+    if($('nav').is(':visible')) {
+      $('nav').hide();
+    } else {
+      $("nav").show();
+    }
+  })
+  
   $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -17,11 +25,27 @@ $(window).load(function() {
     return false;
   });
 	
-	$(".servicons").click(function() {
-		$("#popover").show();
+	$("#b1").click(function() {
+	  $(".popover").hide();
+		$("#p1").show();
 	});
 	
-	$("#popover").click(function() {
-		$("#popover").hide();
+	$("#b2").click(function() {
+	  $(".popover").hide();
+		$("#p2").show();
+	});
+	
+	$("#b3").click(function() {
+	  $(".popover").hide();
+		$("#p3").show();
+	});
+	
+	$("#b4").click(function() {
+	  $(".popover").hide();
+		$("#p4").show();
+	});
+	
+	$(".popover").click(function() {
+		$(".popover").hide();
 	});
 });

@@ -24,7 +24,6 @@
     <!-- Insert CSS Files -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Oxygen' rel='stylesheet' type='text/css' />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     
     <!-- Insert Javascript -->
@@ -35,6 +34,19 @@
   </head>
   
   <body>
+    <button id="but" class="menu">
+      <i class="fa fa-caret-down fa-2x"></i>
+    </button>
+    
+    <nav class="menu">
+      <ul>
+        <li><a href="#title-page">Title Page</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </nav>
+  
     <div id="title-page" class="clearfix">
       <div class="title-wrapper">
         <h1>Brock University</h1>
@@ -125,13 +137,42 @@
         schedule events for fun and learning.</p>
       </div>
       <div class="gallery">
-        <button class="servicons"><h1><i class="fa fa-code"></i> Learning</h1></button>
-        <button class="servicons"><h1><i class="fa fa-cutlery"></i> Food</h1></button>
-        <button class="servicons"><h1><i class="fa fa-beer"></i> Friendship</h1></button>
-        <button class="servicons"><h1><i class="fa fa-gamepad"></i> Events</h1></button>
+        <button id="b1" class="servicons"><h1><i class="fa fa-code"></i> Learning</h1></button>
+        <button id="b2" class="servicons"><h1><i class="fa fa-cutlery"></i> Food</h1></button>
+        <button id="b3" class="servicons"><h1><i class="fa fa-beer"></i> Friendship</h1></button>
+        <button id="b4" class="servicons"><h1><i class="fa fa-gamepad"></i> Events</h1></button>
       </div>
-      <div id="popover">
-        OMG THIS IS SOME AWESOME SHIT TONNE OF TEXT
+      <div id="p1" class="popover">
+        <div id="pop">
+          <h3>Learning</h3>
+          <p>We provide main learning opourtunities.</p>
+          <img src="img/grouplearning1.png" width="348" height="232" />
+        </div>
+      </div>
+      <div id="p2" class="popover">
+        <div id="pop">
+          <h3>Food</h3>
+          <p>We provide main learning opourtunities.</p>
+          <img src="img/grouplearning1.png" width="348" height="232" />
+        </div>
+      </div>
+      <div id="p3" class="popover">
+        <div id="pop">
+          <h3>Friendship</h3>
+          <p>We provide main learning opourtunities.</p>
+          <img src="img/grouplearning1.png" width="348" height="232" />
+        </div>
+      </div>
+      <div id="p4" class="popover">
+        <div id="pop">
+          <h3>Events</h3>
+          <p>We provide main learning opourtunities.</p>
+          <img src="img/grouplearning1.png" width="348" height="232" />
+        </div>
+      </div>
+      <div class="line">
+        <hr />
+        <a class="top" href="#title-page"><h3><i class="fa fa-arrow-up"></i> Top</h3></a>
       </div>
     </div>
     
