@@ -29,15 +29,16 @@ hr {
   color: #FFF;
   background: #000;
 	border: 0;
-	padding: 10px 15px 10px 8px;
   margin: 0 auto;
   text-decoration: none;
-  outline: none;
+  width: 100%;
+  text-align: center;
 }
 
-nav {
-  top: 100px;
-  display: none;
+.menu li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #title-page {
@@ -199,4 +200,17 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 60px;
+}
+
+#jblock {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#tblock {
+  background: url('../img/Jblock.jpg"') 0 0 repeat;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }

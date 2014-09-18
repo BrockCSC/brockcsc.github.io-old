@@ -10,14 +10,6 @@ $.fn.exBounce = function(){
 $(window).load(function() {
   $("#arrow").exBounce();
   
-  $("#but").click(function() {
-    if($('nav').is(':visible')) {
-      $('nav').hide();
-    } else {
-      $("nav").show();
-    }
-  })
-  
   $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
