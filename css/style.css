@@ -188,6 +188,19 @@ hr {
   margin-right: 20px;
 }
 
+#services .popover a {
+  color: #C00;
+  text-decoration: none;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -webkit-transition: 0.6s;
+}
+
+#services .popover a:hover {
+  text-decoration: underline;
+}
+
 #services .popover {
 	border-style: solid;
   border-width: 3px;
@@ -196,6 +209,13 @@ hr {
 	width: 70%;
 	display: none;
 	margin: 0 auto;
+}
+
+#services .popover img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #services .popover #pop {
