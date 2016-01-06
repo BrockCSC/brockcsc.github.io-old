@@ -47,6 +47,10 @@ hr {
   color: #C00;
 }
 
+.calendar {
+  text-align:center;
+}
+
 #title-page {
   margin: 0;
   padding: 0;
