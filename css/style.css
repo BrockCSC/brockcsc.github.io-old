@@ -321,6 +321,10 @@ hr {
   color: #3B5998;
 }
 
+#footer #instagram:hover {
+  color: #9b6954;
+}
+
 #footer #twitter:hover {
   color: #55ACEE;
 }
