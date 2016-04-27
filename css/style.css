@@ -51,6 +51,17 @@ hr {
   text-align:center;
 }
 
+.calendar_tool{
+	width:600; 
+	height:400;
+}
+
+@media only screen and (max-width: 700px) {
+	.calendar_tool{
+		width:100%;
+	}
+}
+
 #title-page {
   margin: 0;
   padding: 0;
