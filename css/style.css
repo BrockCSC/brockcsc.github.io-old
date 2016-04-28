@@ -20,7 +20,7 @@ hr {
 
 .menu {
   position: fixed;
-  z-index: 999999;
+  z-index: 1;
   color: #FFF;
   background: #000;
   margin: 0 auto;
@@ -37,10 +37,11 @@ hr {
 .menu li a {
   text-decoration: none;
   color: #FFF;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 
 .menu li a:hover {
@@ -71,7 +72,6 @@ hr {
   height: 100%;
   overflow: hidden;
   position: relative;
-  z-index: 99999;
 }
 
 #title-page .title-wrapper {
@@ -188,10 +188,11 @@ hr {
   margin: 0 auto;
   text-decoration: none;
   outline: none;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
+  transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
 }
 
 #services .servicons:hover {
@@ -206,10 +207,6 @@ hr {
 #services .popover a {
   color: #C00;
   text-decoration: none;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
 }
 
 #services .popover a:hover {
@@ -277,10 +274,11 @@ hr {
 #events .blurb a {
   text-decoration: none;
   color: #C00;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 
 #events .blurb a:hover {
