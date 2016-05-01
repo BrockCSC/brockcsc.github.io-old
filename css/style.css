@@ -52,9 +52,19 @@ hr {
   text-align:center;
 }
 
-.calendar_tool{
+.calendar_tool {
 	width:600; 
 	height:400;
+}
+
+.twitter {
+  width: 100%;
+  margin: auto;
+  text-align:center;
+}
+
+.twitter > .blurb {
+  text-align: left;
 }
 
 @media only screen and (max-width: 700px) {
