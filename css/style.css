@@ -143,7 +143,13 @@ hr {
   margin-right: 15px;
 }
 
-.scroll {
+/* 
+  Do not name .scroll, that class is required 
+  by scroll.js to identify links that use the scrolling
+  animation. The styling here and for buttons throughout 
+  the page vary.
+*/
+.scroller {
   color: #C00;
   float: right;
   text-decoration: none;
@@ -154,7 +160,7 @@ hr {
   -webkit-transition: 0.3s;
 }
 
-.scroll:hover {
+.scroller:hover {
   color: #000;
 }
 
