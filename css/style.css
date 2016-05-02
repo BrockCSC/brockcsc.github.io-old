@@ -1,351 +1,388 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div {
-  display: block;
+    display: block;
 }
 
 .space {
-  padding-top: 8%;
+    padding-top: 8%;
 }
 
 hr {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .menu {
-  position: fixed;
-  z-index: 1;
-  color: #FFF;
-  background: #000;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
+    position: fixed;
+    z-index: 1;
+    color: #FFF;
+    background: #000;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 .menu li {
-  display: inline;
-  margin-left: 20px;
-  margin-right: 20px;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .menu li a {
-  text-decoration: none;
-  color: #FFF;
-  transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 
 .menu li a:hover {
-  color: #C00;
+    color: #C00;
 }
 
 .calendar {
-  text-align:center;
+    text-align: center;
 }
 
-.calendar_tool{
-	width:600; 
-	height:400;
+.calendar_tool {
+    width: 600;
+    height: 400;
+}
+
+.twitter {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.twitter > .blurb {
+    text-align: left;
 }
 
 @media only screen and (max-width: 700px) {
-	.calendar_tool{
-		width:100%;
-	}
+    .calendar_tool {
+        width: 100%;
+    }
 }
 
 #title-page {
-  margin: 0;
-  padding: 0;
-  background-color: #C00;
-  color: #FFF;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #C00;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 #title-page .title-wrapper {
-  display: block;
-  margin: 0 auto;
-  padding-top: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 #title-page img {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #title-page h1 {
-  text-align: center;
-  vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #title-page #arrow {
-  padding: 0;
-  z-index: 999999;
+    padding: 0;
+    z-index: 999999;
 }
 
 #about {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 80px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 #about p {
-	font-size: 14pt;
+    font-size: 14pt;
 }
 
 #about h2 {
-  color: #C00;
+    color: #C00;
 }
 
 #about h3 {
-  color: #C00;
+    color: #C00;
 }
 
 #about .gallery {
-  display: block;
-  text-align: center;
-  margin-top: 80px;
+    display: block;
+    text-align: center;
+    margin-top: 80px;
 }
 
 #about .gallery span {
-  display: inline-block;
-  margin: 0 auto;
-  margin-bottom: 15px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 #about .gallery span img {
-  display: block;
-  margin-left: 15px;
-  margin-right: 15px;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
 }
 
-.top {
-  color: #C00;
-  float: right;
-  text-decoration: none;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
+
+/* 
+  Do not name .scroll, that class is required 
+  by scroll.js to identify links that use the scrolling
+  animation. The styling here and for buttons throughout 
+  the page vary.
+*/
+
+.top-scroll {
+    color: #C00;
+    float: right;
+    text-decoration: none;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 
-.top:hover {
-  color: #000;
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: -22px;
+    color: #fff;
+    content: "Click to learn more!";
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 100px;
 }
 
 #services {
-  background-color: #F0F0F0;
-  padding-top: 40px;
-  padding-bottom: 80px;
-  display: block;
-	width: 100%;
+    background-color: #F0F0F0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    display: block;
+    width: 100%;
 }
 
 #services .blurb {
-	width: 90%;
-	display: block;
-	margin: 0 auto;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 #services p {
-	font-size: 14pt;
+    font-size: 14pt;
 }
 
 #services h2 {
-  color: #C00;
+    color: #C00;
 }
 
 #services h3 {
-  color: #C00;
+    color: #C00;
 }
 
 #services .gallery {
-  display: block;
-	margin: 0 auto;
-  text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #services .servicons {
-  color: #000;
-	border: 0;
-	padding: 0;
-	background: none;
-  display: inline-block;
-  margin: 0 auto;
-  text-decoration: none;
-  outline: none;
-  transition: 0.2s;
-  -o-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -webkit-transition: 0.2s;
+    color: #000;
+    border: 0;
+    padding: 0;
+    background: none;
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: none;
+    outline: none;
+    transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 #services .servicons:hover {
-  color: #C00;
+    color: #C00;
 }
 
 #services .servicons h1 {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #services .popover a {
-  color: #C00;
-  text-decoration: none;
+    color: #C00;
+    text-decoration: none;
 }
 
 #services .popover a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #services .popover {
-	border-style: solid;
-  border-width: 3px;
-	border-color: #f4cccc;
-	background: #FFF;
-	width: 70%;
-	display: none;
-	margin: 0 auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f4cccc;
+    background: #FFF;
+    width: 70%;
+    display: none;
+    margin: 0 auto;
 }
 
 #services .popover img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #services .popover #pop {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding: 15px 0px 30px 0px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px 30px 0px;
 }
 
 #services .line {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 60px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 #jblock {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
 
 #events {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 80px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 #events p {
-	font-size: 14pt;
+    font-size: 14pt;
 }
 
 #events h2 {
-  color: #C00;
+    color: #C00;
 }
 
 #events h3 {
-  color: #C00;
+    color: #C00;
 }
 
 #events .blurb a {
-  text-decoration: none;
-  color: #C00;
-  transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
+    text-decoration: none;
+    color: #C00;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 
 #events .blurb a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #footer {
-  background: #C00;
-  color: #FFF;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    background: #C00;
+    color: #FFF;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #footer p {
-	font-size: 14pt;
+    font-size: 14pt;
 }
 
 #footer h2 {
-  color: #C00;
+    color: #C00;
 }
 
 #footer h3 {
-  color: #C00;
+    color: #C00;
 }
 
 #footer a {
-  color: #FFF;
-  text-decoration: none;
-  -o-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -webkit-transition: 0.6s;
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 
 #footer .linkit {
-  display: inline;
-  margin-left: 15px;
-  margin-right: 15px;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #footer .linkit:hover {
-  color: #000;
+    color: #000;
 }
 
 #footer #facebook:hover {
-  color: #3B5998;
+    color: #3B5998;
 }
 
 #footer #instagram:hover {
-  color: #9b6954;
+    color: #9b6954;
 }
 
 #footer #twitter:hover {
-  color: #55ACEE;
+    color: #55ACEE;
 }
 
 #footer #reddit:hover {
-  color: #ff5700;
+    color: #ff5700;
 }
 
 #footer #steam:hover {
-  color: #000000;
+    color: #000000;
 }
 
 #footer #github:hover {
-  color: #7D619C;
+    color: #7D619C;
 }
