@@ -168,6 +168,25 @@ hr {
     color: #000;
 }
 
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after {
+    background: #333;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    bottom: -22px;
+    color: #fff;
+    content: "Click to learn more!";
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 100px;
+}
+
 #services {
     background-color: #F0F0F0;
     padding-top: 40px;
