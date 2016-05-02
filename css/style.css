@@ -164,10 +164,6 @@ hr {
     -webkit-transition: 0.3s;
 }
 
-.top-scroll:hover {
-    color: #000;
-}
-
 .tooltip {
     display: inline;
     position: relative;
