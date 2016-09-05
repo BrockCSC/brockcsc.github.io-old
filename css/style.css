@@ -76,8 +76,30 @@ hr {
 }
 
 .join_club:hover{
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
 }
+
+.suggest_event{
+    webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    
+    background-color: #E1E1E1; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.suggest_event:hover{
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+}
+
 
 .twitter {
     width: 100%;
